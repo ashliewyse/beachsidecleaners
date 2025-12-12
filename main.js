@@ -49,7 +49,8 @@ document.querySelector(".prev").addEventListener("click", () => {
 ----------------------------------------------------------- */
 document.getElementById("themeToggle").addEventListener("click", () => {
   const html = document.documentElement;
-  const mode = html.getAttribute("data-theme") === "light" ? "dark" : "light";
+  const mode = html.getAttribute("data-theme")
+=== "light" ? "dark" : "light";
   html.setAttribute("data-theme", mode);
 });
 
@@ -150,3 +151,5 @@ locations.forEach(loc => {
     .addTo(map)
     .bindPopup(`<b>${loc.name}</b><br>Now servicing!`);
 });
+// Footer year
+document.getElementById("year").textContent = new Date().getFullYear();
