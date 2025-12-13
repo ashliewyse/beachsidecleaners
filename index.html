@@ -2,75 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beachside Cleaners | Professional Cleaning Services</title>
-  <meta name="description" content="Beachside Cleaners offers residential cleaning, rental turnovers, yard cleanup, and small repairs in Northwest Indiana, Southwest Michigan, and Chicago.">
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beachside Cleaners</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
 </head>
 <body>
 
-<header class="header">
-  <div class="container header-inner">
-    <a href="index.html" class="brand">
-      <img src="logo.jpg" alt="Beachside Cleaners logo" class="site-logo">
-      <span class="brand-name">Beachside Cleaners</span>
-    </a>
-
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-
-  <section class="section">
-    <h1>Professional Cleaning & Property Care</h1>
-    <p>
-      Serving Northwest Indiana, Southwest Michigan, and the greater Chicago area.
-    </p>
-
+  <!-- Navigation -->
+  <nav class="container-fluid">
     <ul>
-      <li>Residential Cleaning</li>
-      <li>Airbnb / Rental Turnovers</li>
-      <li>Yard Cleanup</li>
-      <li>Small Repairs</li>
+      <li><strong>Beachside Cleaners</strong></li>
     </ul>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" role="button">Contact</a></li>
+    </ul>
+  </nav>
 
-    <a href="contact.html" class="btn">Request a Quote</a>
-  </section>
+  <!-- Main Content -->
+  <main class="container">
+    <div class="grid">
+      <section id="about">
+        <hgroup>
+          <h2>About Us</h2>
+          <h3>Family-Run Full-Service Cleaning</h3>
+        </hgroup>
+        <p>At Beachside Cleaners, we are a family-run team that does it all. We are like the Swiss Army knife of home services. Whether your home needs a fresh scrub, a quick fix, or a major yard rescue, we show up ready to roll with tools in hand and smiles on our faces. Honest work, fair prices, and a local family who treats your home like our own!</p>
 
-  <section class="section">
-    <h2>Why Choose Us</h2>
+        <figure>
+          <img src="https://via.placeholder.com/800x400?text=Your+Image+Here" alt="Cleaning Example" />
+          <figcaption><a href="#" target="_blank">Replace with your own image</a></figcaption>
+        </figure>
+      </section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Reliable</h3>
-        <p>Dependable scheduling and communication.</p>
-      </div>
+      <section id="services">
+        <hgroup>
+          <h2>Services</h2>
+          <h3>What We Offer</h3>
+        </hgroup>
 
-      <div class="card">
-        <h3>Detail-Oriented</h3>
-        <p>We focus on quality and consistency.</p>
-      </div>
+        <h3>Standard Cleaning</h3>
+        <p>Perfect for regular upkeep. Includes dusting, vacuuming, mopping, kitchen & bathroom cleaning, and general tidying. <br><strong>Starting at $120</strong></p>
 
-      <div class="card">
-        <h3>Local Service</h3>
-        <p>Proudly serving our surrounding communities.</p>
-      </div>
+        <h3>Deep Cleaning</h3>
+        <p>For homes that need extra attention—includes baseboards, inside appliances, vents, and detailed scrubbing. <br><strong>Starting at $180</strong></p>
+
+        <h3>Move-In / Move-Out Cleaning</h3>
+        <p>Ideal for new homeowners or renters. Top-to-bottom clean including cabinets, drawers, and fixtures. <br><strong>Starting at $200</strong></p>
+
+        <h3>Bundle Packages – Save More When You Combine!</h3>
+
+        <ul>
+          <li><strong>Fresh Start Package:</strong> Deep cleaning, yard cleanup, minor home touch-ups. <em>Save 15% when booked together</em></li>
+          <li><strong>Beachside Refresh (Rental Bundle):</strong> Turnover cleaning & staging, yard tidying, maintenance check. <em>Loyalty discount after 5 bookings</em></li>
+          <li><strong>Home & Yard Combo:</strong> House cleaning + yard cleanup in one visit. <em>Save $25–$50 per visit when bundled</em></li>
+          <li><strong>Full Home Care Bundle:</strong> Weekly/biweekly/monthly cleaning + yard care + monthly home repair check. <em>Discounted monthly rate anytime</em></li>
+          <li><strong>Total Care Membership:</strong> Recurring cleanings, monthly yard service, seasonal maintenance. <em>Worry-free property upkeep all year long</em></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Contact / Subscribe -->
+  <section id="contact" aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Contact Us</h2>
+          <h3>We're ready when you are</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="Your name" aria-label="Your name" required />
+          <input type="email" id="email" name="email" placeholder="Your email" aria-label="Your email" required />
+          <button type="submit" onclick="event.preventDefault()">Send Message</button>
+        </form>
+        <p><strong>Phone:</strong> (219) 243-1838 or (219) 214-5610<br />
+        <strong>Email:</strong> <a href="mailto:beachsidecleanersmc@gmail.com">beachsidecleanersmc@gmail.com</a></p>
+      </article>
     </div>
   </section>
 
-</main>
+  <!-- Footer -->
+  <footer class="container">
+    <small>
+      <a href="#">© 2025 Beachside Cleaners</a> • <a href="#">Privacy Policy</a>
+    </small>
+  </footer>
 
-<footer class="footer">
-  <p>© <span id="year"></span> Beachside Cleaners</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
